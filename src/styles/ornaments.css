@@ -1,30 +1,38 @@
+/* Ornament styling */
 .ornament {
- position: absolute;
- width: 20px;
- height: 20px;
- border-radius: 50%;
- background: var(--ornament-color);
- cursor: pointer;
- transform-style: preserve-3d;
- transition: transform 0.3s ease;
+  position: absolute;
+  width: 20px; /* Size of the ornament */
+  height: 20px;
+  border-radius: 50%; /* Circular shape */
+  background: var(--ornament-color); /* Dynamic ornament color */
+  cursor: pointer;
+  transform-style: preserve-3d; /* Allow 3D transformations */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for transform and brightness */
 }
+
+/* Hover effect for ornaments */
 .ornament:hover {
- transform: scale(1.2) translateZ(20px);
- filter: brightness(1.2);
+  transform: scale(1.2) translateZ(20px); /* Slight enlargement and 3D effect */
+  filter: brightness(1.2); /* Brighten the ornament */
 }
+
+/* Decorative cap or hook on top of the ornament */
 .ornament::before {
- content: '';
- position: absolute;
- top: -5px;
- left: 8px;
- width: 4px;
- height: 7px;
- background: #silver;
- border-radius: 2px;
+  content: '';
+  position: absolute;
+  top: -5px; /* Position it just above the ornament */
+  left: 8px; /* Center it horizontally */
+  width: 4px;
+  height: 7px; /* The hook size */
+  background: silver; /* The color of the ornament hook */
+  border-radius: 2px; /* Rounded corners for the hook */
 }
+
+/* Container for all ornaments */
 .ornaments-container {
- position: absolute;
- width: 100%;
- height: 100%;
- transform-style: preserve-3d;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; /* Allow 3D transformations for all ornaments within this container */
+  pointer-events: none; /* Prevent the container from blocking interactions with individual ornaments */
 }
