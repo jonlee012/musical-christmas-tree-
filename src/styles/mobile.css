@@ -1,21 +1,28 @@
 @media (max-width: 768px) {
- .tree-layer {
- border-left-width: 100px;
- border-right-width: 100px;
- border-bottom-width: 200px;
- }
- .controls {
- top: auto;
- bottom: 20px;
- right: 50%;
- transform: translateX(50%);
- }
- .controls button {
- font-size: 24px;
- padding: 15px;
- }
- .music-player {
- width: 90%;
- bottom: 80px;
- }
+  /* Adjust the tree layer for smaller screens */
+  .tree-layer {
+    border-left-width: 100px;  /* Reduce the left border size */
+    border-right-width: 100px; /* Reduce the right border size */
+    border-bottom-width: 200px; /* Reduce the bottom section size */
+  }
+
+  /* Controls panel positioning for smaller screens */
+  .controls {
+    top: auto; /* Remove top positioning */
+    bottom: 20px; /* Position controls near the bottom */
+    right: 50%; /* Center horizontally */
+    transform: translateX(50%); /* Fine-tune the positioning */
+  }
+
+  /* Adjust the button size and padding for smaller screens */
+  .controls button {
+    font-size: 24px; /* Increase font size for better touch targets */
+    padding: 15px; /* Add more padding for easier tapping */
+  }
+
+  /* Adjust the music player width and positioning */
+  .music-player {
+    width: 90%; /* Allow the player to be wider */
+    bottom: 80px; /* Position the player slightly higher for visibility */
+  }
 }
