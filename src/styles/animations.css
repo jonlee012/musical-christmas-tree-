@@ -1,26 +1,37 @@
+/* Keyframes for rotating the tree */
 @keyframes treeRotate {
- 0% { transform: rotateY(0deg); }
- 100% { transform: rotateY(360deg); }
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
 }
+
+/* Keyframes for snowfall effect */
 @keyframes snowfall {
- 0% {
- transform: translateY(-100%) rotate(0deg);
- }
- 100% {
- transform: translateY(1000%) rotate(360deg);
- }
+  0% {
+    transform: translateY(-100%) rotate(0deg); /* Start above the viewport */
+  }
+  100% {
+    transform: translateY(1000%) rotate(360deg); /* End far below with rotation */
+  }
 }
+
+/* Keyframes for the twinkling effect of lights */
 @keyframes lightTwinkle {
- 0%, 100% { opacity: 0.3; }
-50% { opacity: 1; }
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
 }
+
+/* Keyframes for star glow effect */
 @keyframes starGlow {
- 0%, 100% { filter: drop-shadow(0 0 5px gold); }
- 50% { filter: drop-shadow(0 0 20px gold); }
+  0%, 100% { filter: drop-shadow(0 0 5px gold); } /* Subtle glow at start/end */
+  50% { filter: drop-shadow(0 0 20px gold); } /* Stronger glow in the middle */
 }
+
+/* Lights with twinkle effect */
 .tree-light {
- animation: lightTwinkle 2s var(--delay) infinite;
+  animation: lightTwinkle 2s var(--delay) infinite; /* var(--delay) allows random delay for variety */
 }
+
+/* Snowflakes falling with rotation */
 .snowflake {
- animation: snowfall linear infinite;
+  animation: snowfall linear infinite; /* Snowfall animation with linear timing */
 }
