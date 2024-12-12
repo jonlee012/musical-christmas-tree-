@@ -35,3 +35,13 @@
 .snowflake {
   animation: snowfall linear infinite; /* Snowfall animation with linear timing */
 }
+@keyframes snowfall {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(1000%) rotate(360deg);
+    opacity: 0.4;
+  }
+}
