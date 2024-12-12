@@ -8,17 +8,16 @@ document.addEventListener('DOMContentLoaded', function () {
     let lightsOn = false;  
 
     // Toggle music functionality
-    musicToggle.addEventListener('click', () => {  
-        musicOn = !musicOn;  
-        musicToggle.textContent = musicOn ? '🔊' : '🔇';  
-        
-        // Assuming you have a function to handle the music play/pause
-        if (musicOn) {
-            toggleMusic();  // Play music if musicOn is true
-        } else {
-            toggleMusic();  // Stop music if musicOn is false
-        }
-    });  
+  musicToggle.addEventListener('click', () => {
+    musicOn = !musicOn;
+    musicToggle.textContent = musicOn ? '🔊' : '🔇';
+    if (musicOn) {
+        toggleMusic();  // Start music
+    } else {
+        toggleMusic();  // Stop music
+    }
+});
+
 
     // Toggle snow functionality
     snowToggle.addEventListener('click', () => {  
