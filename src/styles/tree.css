@@ -1,8 +1,8 @@
 /* Center the tree container on the screen */
 .tree-container {
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 600px; /* Doubled size for larger tree */
     height: 800px;
